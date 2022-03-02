@@ -21,3 +21,9 @@ Should be contains:
 - weigth
 - pets guardian
 
+## 02 - palindrome check
+Checar palindromo
+
+Create a function that check if a string is a palindrome
+
+~~my brother forget the challenger today, I almost win 1 point for free :(~~ 
