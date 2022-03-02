@@ -11,8 +11,21 @@ module.exports =  class {
         return this.checkString(stringInverted)
     }
     checkString (stringInverted) {
-        if (stringInverted == this.palindrome) {
+        let checker = this.removeSpaces(stringInverted)
+        let toCheck = this.removeSpaces(this.palindrome)
+
+        if (checker === toCheck) {
             console.log(`${ this.palindrome } is a palindrome`)
+        } else {
+            console.log(`${ this.palindrome } is not a palindrome. Result: ${ stringInverted }`)
         }
+    }
+    removeSpaces(string) {
+        let result = ''
+        for (let index = 0; index < string.length; index++) {
+            if (string[index] == ' ') { continue }
+            result += string[index];
+        }
+        return result
     }
 }
