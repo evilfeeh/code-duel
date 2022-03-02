@@ -1,3 +1,10 @@
+/**
+ * Native Method, using javascript methods
+ * @class use native methods
+ * @method invertString invert a string given by a constructor
+ * @method removeSpaces remove spaces using a for statement
+ * @method checkString check a modify string with the original one
+ */
 module.exports = class {
     palindrome = ''
     constructor(palindrome) {
