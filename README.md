@@ -11,7 +11,6 @@ Each path is about one little project that he told me to do it. Also, I made the
 Enjoy the process
 
 ## 01 - PET REGISTER
-Registro de animais
 
 A simple form to register a new pet
 Should be contains:
@@ -22,8 +21,16 @@ Should be contains:
 - pets guardian
 
 ## 02 - palindrome check
-Checar palindromo
 
 Create a function that check if a string is a palindrome
 
 ~~my brother forget the challenger today, I almost win 1 point for free :(~~ 
+
+## 03 - a chronometer
+
+Do a chronometer with:
+- start
+- pause
+- reset
+
+~~it is important to say that I made this challenger listening Dua Lipa?~~
