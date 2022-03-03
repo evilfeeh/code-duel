@@ -14,10 +14,6 @@ function start() {
   clock(true)
 }
 
-function pause() {
-  clock(false)
-}
-
 function update() {
   if (currentTimer.seconds == 60) {
     currentTimer.minutes++
@@ -36,13 +32,16 @@ function update() {
 }
 
 function clock(state) {
-  if (state) {
-    timer = setInterval(() => {
-      currentTimer.seconds++
-      update()
+  timer = setInterval(() => {
+    currentTimer.seconds++
+    update()
     }, 1000);
-  }
 }
+
+function pause() {
+  clearInterval(timer)
+}
+
 
 function reset() { 
   clearInterval(timer)
