@@ -1,6 +1,6 @@
 let chronos = ''
 let timer = ''
-let currentTimer = {
+const currentTimer = {
   minutes: 00,
   seconds: 00
 }
@@ -14,6 +14,9 @@ function start() {
   clock(true)
 }
 
+function pause() {
+  clock(false)
+}
 
 function update() {
   if (currentTimer.seconds == 60) {
@@ -39,4 +42,11 @@ function clock(state) {
       update()
     }, 1000);
   }
+}
+
+function reset() { 
+  clearInterval(timer)
+  currentTimer.minutes = 0
+  currentTimer.seconds = 0
+  update()
 }
