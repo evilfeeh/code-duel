@@ -16,7 +16,7 @@ function start() {
 
 function update() {
   addMinute()
-  adjustmentTimer()
+  validateTimer()
   chronos.innerText = `${currentTimer.minutes}:${currentTimer.seconds}`
 }
 
