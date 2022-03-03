@@ -15,11 +15,19 @@ function start() {
 }
 
 function update() {
+  addMinute()
+  adjustmentTimer()
+  chronos.innerText = `${currentTimer.minutes}:${currentTimer.seconds}`
+}
+
+function addMinute() {
   if (currentTimer.seconds == 60) {
     currentTimer.minutes++
     currentTimer.seconds = 0
   }
-  
+}
+
+function validateTimer() {
   if (currentTimer.minutes.toString().length == 1) {
     currentTimer.minutes = currentTimer.minutes.toString().padStart(2, '0')
   }
@@ -27,9 +35,8 @@ function update() {
   if (currentTimer.seconds.toString().length == 1) {
     currentTimer.seconds = currentTimer.seconds.toString().padStart(2, '0')
   }
-
-  chronos.innerText = `${currentTimer.minutes}:${currentTimer.seconds}`
 }
+
 
 function clock(state) {
   timer = setInterval(() => {
