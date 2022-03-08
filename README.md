@@ -34,3 +34,6 @@ Do a chronometer with:
 - reset
 
 ~~it is important to say that I made this challenger listening Dua Lipa?~~
+
+### bonus:
+Create a docker container to test shell on windows
