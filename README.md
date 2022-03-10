@@ -1,8 +1,5 @@
 # HERE COMES A NEW CHALLEGER
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-
 this repo exists to put my skills on, against my brother supremacy ( :o )
 ~~he is evil, if u read this, please save-me~~
 
